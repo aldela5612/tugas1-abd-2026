@@ -2,39 +2,45 @@
 
 ## Dataset yang Dipilih
 
-Isi informasi berikut sebelum Milestone 1.
-
 | Item | Isi |
 |---|---|
-| Nama dataset | `[isi nama dataset]` |
-| Sumber | `[URL BPS / Satu Data Indonesia / BMKG / HuggingFace / Kaggle]` |
-| Lisensi/ketentuan pakai | `[isi]` |
-| Ukuran | `[>= 500 MB atau > 1.000.000 baris]` |
-| Periode data | `[isi]` |
-| Unit analisis | `[isi]` |
+| Nama dataset | TMDB Movies Dataset 2023 – 930K Movies |
+| Sumber | Kaggle – TMDB Movies Dataset 2023 – 930K Movies |
+| URL Sumber | https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/versions/458 |
+| Lisensi/ketentuan pakai | Mengikuti lisensi dan ketentuan penggunaan yang tercantum pada halaman dataset Kaggle serta ketentuan sumber data TMDB |
+| Ukuran | Dataset berukuran besar dengan sekitar 930 ribu data film. Ukuran file mengikuti file dataset yang diunduh dari Kaggle |
+| Periode data | Data film dengan tahun/tanggal rilis yang beragam berdasarkan data yang tersedia pada TMDB |
+| Unit analisis | Film/movie |
 
-## Tempat Mencari Dataset
+## Deskripsi Dataset
 
-Pilih dataset Indonesia yang legal digunakan, dapat didokumentasikan sumbernya, dan memenuhi batas ukuran tugas.
+Dataset yang digunakan dalam Tugas 1 adalah **TMDB Movies Dataset 2023 – 930K Movies** yang diperoleh melalui Kaggle. Dataset ini berisi informasi mengenai film yang bersumber dari **The Movie Database (TMDB)**.
 
-| Situs | Kegunaan |
-|---|---|
-| [Satu Data Indonesia](https://data.go.id/) | Portal data terbuka lintas instansi pemerintah Indonesia. |
-| [Badan Pusat Statistik](https://www.bps.go.id/) | Statistik sosial, ekonomi, kependudukan, dan data wilayah. |
-| [BMKG Data Online](https://dataonline.bmkg.go.id/) | Data cuaca, iklim, gempa bumi, dan observasi meteorologi. |
-| [Hugging Face Datasets](https://huggingface.co/datasets) | Dataset publik yang dapat dicari berdasarkan topik, bahasa, atau ukuran. |
-| [Kaggle Datasets](https://www.kaggle.com/datasets) | Katalog dataset publik; periksa lisensi dan dokumentasi pembuatnya. |
-| [Google Dataset Search](https://datasetsearch.research.google.com/) | Mesin pencari untuk menemukan dataset dari berbagai portal. |
+Data dapat digunakan untuk melakukan proses eksplorasi, pemeriksaan struktur data, analisis kualitas data, serta data profiling sebagai bagian dari tugas Analisis Big Data.
 
-## Cara Memperoleh Data
+Setiap baris pada dataset merepresentasikan satu data film dan setiap kolom berisi atribut atau informasi yang berkaitan dengan film tersebut.
 
-1. Buka URL sumber di atas.
-2. Unduh file ke folder `data/raw/` tanpa mengubah data mentah.
-3. Catat nama file dan checksum bila tersedia.
-4. Ubah variabel `DATA_PATH` pada `notebooks/01_data_profiling.ipynb` agar menunjuk ke file tersebut.
+## Sumber Dataset
 
-## Aturan Penyimpanan
+Dataset diperoleh dari Kaggle melalui URL berikut:
 
-- Jangan commit dataset mentah atau hasil olahan berukuran besar ke Git.
-- File pada `data/raw/` adalah data asli dan tidak boleh diubah.
-- Simpan hasil transformasi yang dapat direproduksi pada `data/processed/`.
+https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/versions/458
+
+Kaggle digunakan sebagai sumber pengunduhan dataset. Informasi dan ketentuan penggunaan dataset mengikuti halaman sumber dataset tersebut.
+
+## Periode Data
+
+Dataset mencakup data film dengan tahun atau tanggal rilis yang beragam. Periode data mengikuti data film yang tersedia pada sumber TMDB dan dataset yang dipublikasikan melalui Kaggle.
+
+## Unit Analisis
+
+Unit analisis dalam dataset adalah **film/movie**.
+
+Dengan demikian, satu baris data merepresentasikan satu film, sedangkan kolom-kolomnya berisi informasi atau atribut yang berkaitan dengan film tersebut.
+
+## File Data
+
+File dataset mentah disimpan pada folder:
+
+```text
+data/raw/
