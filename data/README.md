@@ -2,39 +2,107 @@
 
 ## Dataset yang Dipilih
 
-Isi informasi berikut sebelum Milestone 1.
+Dataset yang digunakan dalam Tugas 1 adalah **TMDB Movies Dataset 2023 – 930K Movies** yang diperoleh dari Kaggle. Dataset ini berisi data film dari The Movie Database (TMDB) dengan berbagai informasi seperti judul film, tanggal rilis, rating, jumlah vote, pendapatan, durasi, bahasa, genre, perusahaan produksi, negara produksi, deskripsi film, dan informasi lainnya.
+
+Berdasarkan file dataset yang digunakan secara lokal, dataset memiliki **1.164.598 baris dan 24 kolom**.
 
 | Item | Isi |
 |---|---|
-| Nama dataset | `[isi nama dataset]` |
-| Sumber | `[URL BPS / Satu Data Indonesia / BMKG / HuggingFace / Kaggle]` |
-| Lisensi/ketentuan pakai | `[isi]` |
-| Ukuran | `[>= 500 MB atau > 1.000.000 baris]` |
-| Periode data | `[isi]` |
-| Unit analisis | `[isi]` |
+| Nama dataset | TMDB Movies Dataset 2023 – 930K Movies |
+| Sumber | Kaggle |
+| URL Sumber | https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/versions/458 |
+| Lisensi/ketentuan pakai | ODC Attribution License (ODC-By), sesuai informasi lisensi pada halaman dataset Kaggle |
+| Ukuran | 1.164.598 baris dan 24 kolom berdasarkan file dataset yang digunakan |
+| Periode data | Tahun/tanggal rilis film bervariasi sesuai data yang tersedia pada dataset |
+| Unit analisis | Film/movie |
 
-## Tempat Mencari Dataset
+---
 
-Pilih dataset Indonesia yang legal digunakan, dapat didokumentasikan sumbernya, dan memenuhi batas ukuran tugas.
+## Deskripsi Dataset
 
-| Situs | Kegunaan |
-|---|---|
-| [Satu Data Indonesia](https://data.go.id/) | Portal data terbuka lintas instansi pemerintah Indonesia. |
-| [Badan Pusat Statistik](https://www.bps.go.id/) | Statistik sosial, ekonomi, kependudukan, dan data wilayah. |
-| [BMKG Data Online](https://dataonline.bmkg.go.id/) | Data cuaca, iklim, gempa bumi, dan observasi meteorologi. |
-| [Hugging Face Datasets](https://huggingface.co/datasets) | Dataset publik yang dapat dicari berdasarkan topik, bahasa, atau ukuran. |
-| [Kaggle Datasets](https://www.kaggle.com/datasets) | Katalog dataset publik; periksa lisensi dan dokumentasi pembuatnya. |
-| [Google Dataset Search](https://datasetsearch.research.google.com/) | Mesin pencari untuk menemukan dataset dari berbagai portal. |
+TMDB Movies Dataset merupakan dataset yang berisi informasi mengenai film yang bersumber dari The Movie Database (TMDB).
 
-## Cara Memperoleh Data
+Dataset memiliki berbagai atribut yang menggambarkan karakteristik suatu film, antara lain:
 
-1. Buka URL sumber di atas.
-2. Unduh file ke folder `data/raw/` tanpa mengubah data mentah.
-3. Catat nama file dan checksum bila tersedia.
-4. Ubah variabel `DATA_PATH` pada `notebooks/01_data_profiling.ipynb` agar menunjuk ke file tersebut.
+- ID film
+- Judul film
+- Rating rata-rata
+- Jumlah vote
+- Status film
+- Tanggal rilis
+- Pendapatan
+- Durasi film
+- Kategori adult
+- Backdrop
+- Anggaran produksi
+- Homepage
+- IMDb ID
+- Bahasa asli
+- Judul asli
+- Ringkasan/overview film
+- Popularity
+- Poster
+- Tagline
+- Genre
+- Perusahaan produksi
+- Negara produksi
+- Bahasa yang digunakan
+- Keywords
 
-## Aturan Penyimpanan
+Setiap baris merepresentasikan satu data film, sedangkan setiap kolom merepresentasikan atribut atau karakteristik yang berkaitan dengan film.
 
-- Jangan commit dataset mentah atau hasil olahan berukuran besar ke Git.
-- File pada `data/raw/` adalah data asli dan tidak boleh diubah.
-- Simpan hasil transformasi yang dapat direproduksi pada `data/processed/`.
+---
+
+## Sumber Dataset
+
+Dataset diperoleh dari platform Kaggle melalui halaman:
+
+https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies/versions/458
+
+Dataset tersebut dipublikasikan oleh pengguna Kaggle `asaniczka` dan berisi data film dari TMDB.
+
+---
+
+## Lisensi dan Ketentuan Penggunaan
+
+Berdasarkan informasi yang tercantum pada halaman Kaggle, dataset menggunakan:
+
+**ODC Attribution License (ODC-By).**
+
+Penggunaan dataset dalam tugas ini dilakukan untuk keperluan akademik dan mengikuti ketentuan lisensi serta ketentuan penggunaan yang berlaku pada sumber dataset.
+
+Sumber dataset tetap dicantumkan dalam dokumentasi proyek sebagai bentuk atribusi.
+
+---
+
+## Periode Data
+
+Dataset memiliki tanggal atau tahun rilis film yang beragam. Periode data mengikuti informasi film yang tersedia pada dataset yang digunakan.
+
+Karena dataset Kaggle dapat memiliki versi yang berbeda, jumlah data dan karakteristik data dapat berbeda antara satu versi dataset dengan versi lainnya.
+
+Oleh karena itu, jumlah data yang digunakan dalam Tugas 1 mengacu pada file dataset yang telah diunduh dan digunakan secara lokal dalam project ini.
+
+---
+
+## Unit Analisis
+
+Unit analisis dataset adalah **film/movie**.
+
+Setiap baris merepresentasikan satu data film, sedangkan setiap kolom merepresentasikan atribut atau karakteristik yang berkaitan dengan film tersebut.
+
+Dengan demikian:
+
+- **Unit analisis:** film/movie
+- **Observasi:** 1.164.598 baris
+- **Variabel/atribut:** 24 kolom
+
+---
+
+## Ukuran Dataset
+
+Berdasarkan pemeriksaan terhadap file dataset yang digunakan pada project ini, diperoleh:
+
+```text
+Jumlah baris  : 1.164.598
+Jumlah kolom  : 24
